@@ -1,9 +1,7 @@
-from django.contrib import admin
 from django.urls import path
-
-from .views import index, imagem
+from galeria.views import index, imagem
 
 urlpatterns = [
-    path('', index),
-    path('imagem/', imagem),
+    path('', index, name='index'),
+    path('imagem/', imagem, name='imagem'),
 ]
